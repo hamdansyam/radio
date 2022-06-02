@@ -1,0 +1,20 @@
+<html>
+    <script>
+        function rdmac(form)
+        {
+            var gender="";
+            if(form.wanita.checked==true)
+            {gender="wanita";}
+            else
+            {gender="laki";}
+            form.hasilnya.value=gender;
+        }
+    </script>
+    <body>
+        <form name="ff">
+            <input type="radio" name="wanita">wanita
+            <br><input type="button" value="confirm" name="confirm" onclick="rdmac(this.form)">
+            <br><input type="text" name="hasilnya">
+        </form>
+    </body>
+</html>
